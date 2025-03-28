@@ -1,8 +1,16 @@
 AWSTemplateFormatVersion: '2010-09-09'
-Description: This will spin up a EC2 instance this will be the new version
+Description: This will spin up an EC2 instance - this will be the new version
+
 Resources: 
-    myEC2Instance: 
-        Type: 'AWS::EC2::Instance'
-        Properties: 
-            InstanceType: 't2.micro'
-            ImageId: 'ami-0912f71e06545ad88'
+  myEC2Instance: 
+    Type: 'AWS::EC2::Instance'
+    Properties: 
+      InstanceType: 't2.micro'
+      ImageId: 'ami-0912f71e06545ad88'
+      Tags:
+        - Key: Name
+          Value: MyEC2Instance
+        - Key: Environment
+          Value: Dev
+        - Key: Project
+          Value: CloudFormationDemo
