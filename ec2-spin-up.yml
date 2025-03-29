@@ -1,5 +1,5 @@
 AWSTemplateFormatVersion: '2010-09-09'
-Description: This will spin up an EC2 instance - this will be the new version
+Description: This will spin up an EC2 instance - this will be the EC2 From the Github Directly.
 
 Resources: 
   myEC2Instance: 
