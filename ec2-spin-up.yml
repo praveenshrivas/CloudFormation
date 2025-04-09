@@ -13,4 +13,4 @@ Resources:
         - Key: Environment
           Value: Dev
         - Key: Project
-          Value: CloudFormationDemo
+          Value: CloudFormationDemo1
