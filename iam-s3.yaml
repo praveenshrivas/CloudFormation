@@ -1,0 +1,20 @@
+AWSTemplateFormatVersion: '2010-09-09'
+
+Resources:
+
+  MyIAMUser:
+    Type: AWS::IAM::User
+    Properties:
+      UserName: demo-user
+
+  MyIAMGroup:
+    Type: AWS::IAM::Group
+    Properties:
+      GroupName: demo-group
+
+  MyS3Bucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: demo-cloudformation-bucket-12345
+      VersioningConfiguration:
+        Status: Enabled
